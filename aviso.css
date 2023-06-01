@@ -1,0 +1,36 @@
+#quad{
+    width: 900px;
+    height: 450px;
+    background-color: #858585;
+    margin-left: 320px;
+    margin-top: -600px;
+    border-radius: 40px;
+    position: absolute;
+}
+
+#aviso{
+    margin-top: -588px;
+    margin-left: 730px;
+    position: absolute;
+}
+
+#letraG{
+    font-size: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#letraP{
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a{
+    font-size: 30px; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-align: center; 
+    margin-top: 20px;
+}
