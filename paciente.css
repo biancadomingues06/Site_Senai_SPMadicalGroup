@@ -1,0 +1,198 @@
+p
+{
+    font-size: 1.8em;
+    margin-top: 14px;
+}
+#paciente
+{
+    width: 12px; ;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -11.92%;
+    margin-left:79.53%;
+    top: -15.69%;
+    bottom: 66.92%;
+    background: #7F51A4;
+}
+#bola1
+{
+    background-color: #a124dc;
+    height: 265px;
+    border-radius: 50%;
+    top: -35px;
+    width: 23%;
+    margin-left: -75px;
+    position: absolute;
+}
+#bola2
+{ 
+    background-color: #b87bf4;
+    height: 250px;
+    border-radius: 50%;
+    top: 80%;
+    width: 20%;
+    margin-left: 545px;
+    position: absolute;
+}
+#img
+{
+    height: 150px;
+    width: 175px;
+    margin-top: 2.2%;
+    margin-left: 1300px;
+    position: absolute;
+}
+#img2
+{
+    height: 150px;
+    width: 170px;
+    margin-top: 13%;
+    margin-left: 1310px;
+    position: absolute;
+}
+#img3
+{
+    height: 150px;
+    width: 168px;
+    margin-top: 24%;
+    margin-left: 1310px;
+    position: absolute;
+}
+#img4
+{
+    height: 150px;
+    width: 168px;
+    margin-top: 36%;
+    margin-left: 1310px;
+    position: absolute;
+}
+#linha
+{
+    background-color: black;
+    height: 85%;
+    width: 0.1%;
+    position: absolute;
+    margin-top: 3.5%;
+    margin-left: 83%;
+}
+#linha2
+{
+    background-color: black;
+    height: 85%;
+    width: 0.1%;
+    position: absolute;
+    margin-top: 3.5%;
+    margin-left: 45%;
+}
+#pendente
+{
+    width: 295px;
+    height: 70px;
+    position: absolute;
+    margin-left: 12%;
+    margin-top: 5%;
+    background-color: #a29f9f;
+    border-radius: 100px;
+    text-align: center;
+}
+#concluido
+{
+    width: 295px;
+    height: 70px;
+    position: absolute;
+    margin-left: 55%;
+    margin-top: 5%;
+    background-color: #a29f9f;
+    border-radius: 100px;
+    text-align: center;
+}
+#voltar-icone
+{
+    height: 55px;
+    width: 55px;
+    margin-top: 670px;
+    margin-left: 25px;
+    position: absolute;
+}
+#consulta
+{
+    width: 380px;
+    height: 125px;
+    position: absolute;
+    margin-left: 52%;
+    margin-top: 26.5%;
+    background-color: #8b8a8a;
+    border-radius: 50px;
+    text-align: left;
+}
+#texto1
+{
+    font-size: 125%;
+    margin-top: 30px;
+    margin-left: 10%;
+    list-style: none;
+}
+#bolinha-mais
+{
+    background-color:#7f51a4;
+    height: 75px;
+    border-radius: 50%;
+    top: 485px;
+    width: 75px;
+    margin-left: 1080px;
+    position: relative;
+}
+#img5
+{
+    height: 50px;
+    width: 50px;
+    margin-top: 15px;
+    margin-left: 11.5px;
+    position: relative;
+}
+#consulta2
+{
+    width: 380px;
+    height: 125px;
+    position: absolute;
+    margin-left: 52%;
+    margin-top: 10%;
+    background-color: #8b8a8a;
+    border-radius: 50px;
+    text-align: left;
+}
+#boll-detal
+{
+    background-color: #7F51A4;
+    margin-top: 235px;
+    margin-left: 1080px;
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    border-radius: 50%;
+}
+#img6
+{
+    height: 50px;
+    width: 50px;
+    margin-top: 15px;
+    margin-left: 11.5px;
+    position: relative;
+}
+#mais
+{
+    height: 50px;
+    width: 50px;
+    margin-top: 425px;
+    margin-left: 1090px;
+    position: relative;
+}
+#mais2
+{
+    height: 50px;
+    width: 50px;
+    margin-top: 250px;
+    margin-left: -48px;
+    position: absolute;
+}

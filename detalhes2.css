@@ -1,0 +1,88 @@
+#quadrado1
+{
+    width: 550px;
+    height: 210px;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 40px;
+    background-color: #b87bf4;
+    border-radius: 120px;
+    text-align: left;
+}
+#bolinha
+{
+    background-color: #7F51A4;
+    margin-top: 175px;
+    margin-left: 450px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+}
+#img1
+{
+    height: 50px;
+    width: 50px;
+    margin-top: 24px;
+    margin-left: 23px;
+    position: relative;
+}
+#quadrado2
+{
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 150px;
+    background-color: #858585;
+    border-radius: 120px;
+    text-align: left;
+}
+#alinhamento
+{
+    margin-top: 20px;
+    margin-left: 90px;
+}
+#texto1
+{
+    font-size: 32px;
+    margin-top: 40px;
+    margin-left: 10%;
+    list-style: none;
+}
+#texto2
+{
+    font-size: 40px;
+    margin-top: 150px;
+    margin-left: 10%;
+    list-style: none;
+    color: white;
+}
+#quadrado3
+{
+    width: 1530px;
+    height: 745px;
+    position: absolute;
+    margin-left: -10px;
+    margin-top:-20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: left;
+    opacity: 62%;
+}
+#img2
+{
+    width: 1530px;
+    height: 745px;
+    margin-top: -20px ;
+    margin-left: -10px;
+    position: absolute;
+}
+#img3
+{
+    width: 50px;
+    height: 40px;
+    margin-top: 205px ;
+    margin-left: 473px;
+    position: absolute;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP Medical Group - Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="shortcut icon" href="Imagens/icon logo.png" type="image/x-icon">
+
+    <style>
+        button{
+        padding: 10px 8px;
+        height: 70px;
+        width: 230px;
+        margin-top: 560px;
+        margin-left: 410px;
+        background-color: #a124dc;
+        color: #ffff;
+        font-size: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border-radius: 50px;
+        border-color:#efefef;
+        text-align: center;
+        user-select: none;
+        cursor: pointer;
+        position: absolute;
+        }
+
+        button:hover{
+            background-color: #5e1082;
+        }
+    </style>
+
+</head>
+<body style="overflow-y: hidden;overflow-x: hidden; background-color: #efefef; left: 0%; top: 0%;">
+    
+    <div id="bolinha1"></div>
+    <div id="bolinha3"></div>
+
+    <img src="Imagens/logo.png" alt="png" id="logo" style="margin-top: 620px; margin-left: 962px;">
+
+    <p id="texto1">CADASTRO</p>
+    <p id="texto2">Dados pessoais:</p>
+    <p id="texto3">Dados da conta:</p>
+
+    <img src="Imagens/cadastro médico.jpg" alt="png" id="img">
+
+    <div id="bolinha2"></div>
+
+    <div id="pai">
+        <div id="caixa-senha"><input id="senha" type="text" placeholder="  Senha"></div>
+        <div id="caixa-email"><input id="e-mail" type="text" placeholder="  E-mail"></div>
+        <div id="caixa-cpf"><input id="cpf" type="text" placeholder="  CPF" ></div>
+        <div id="caixa-acesso"><input id="acesso" type="text" placeholder="  Senha de acesso"></div>
+        <div id="caixa-nome"><input id="nome" type="text" placeholder="  Nome"></div>
+        <div id="caixa-numero"><input id="numero" type="text" placeholder="  Número para contato"></div>
+        <div id="caixa-nascimento"><input id="nascimento" type="text"placeholder="  Data de nascimento" onfocus="(this.type='date')" onblur="(this.type='date')"></div>
+    </div>
+
+    <select id="selecao">
+        <option>Sexo:</option>
+        <option>Masculino</option>
+        <option>Feminino</option>
+        <option>Prefiro não informar</option>
+    </select>
+
+    <a href="BECE.html"><button>CADASTRE-SE</button></a>
+
+    <a href="Escolha2.0.html"><img src="Imagens/voltar.png" alt="png" id="voltar" 
+        style="margin-top: 625px;"></a>
+    
+    <img src="Imagens/ponto-icon.png" alt="png" id="circulo">
+    <img src="Imagens/ponto-icon.png" alt="png" id="circulo2">
+</body>
+</html>
