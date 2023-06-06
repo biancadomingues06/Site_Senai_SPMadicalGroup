@@ -1,5 +1,4 @@
-#barra
-{
+#barra{
 height: 75px;
 width: 1536px;
 position: absolute;
@@ -11,15 +10,13 @@ background-color: #676767;
 p{
     color: white; 
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#fundo
-{
+#fundo{
   background-color: rgb(255, 255, 255);
 }
-#img
-{
+#img{
     position: absolute;
     margin-left: 30%;
     margin-top: 2%;
@@ -28,16 +25,14 @@ p{
 }
 
 
-#logo
-{
+#logo{
     position: absolute;
     margin-left: 9%;
     margin-top: 7.5% ;
     width: 12%;
     height: 18%;
 }
-#bola1
-{
+#bola1{
     background-color: #7f51a4;
     height: 100px;
     border-radius: 50%;
@@ -46,8 +41,7 @@ p{
     margin-left: 255px;
     position: absolute;
 }
-#bola2
-{
+#bola2{
     background-color: #b87bf4;
     height: 180px;
     border-radius: 50%;
@@ -57,8 +51,7 @@ p{
     position: absolute;
 }
 
-#bola3
-{
+#bola3{
     background-color: #7f51a4;
     height: 180px;
     border-radius: 50%;
@@ -67,8 +60,7 @@ p{
     margin-left: 100px;
     position: absolute;
 }
-#linha
-{
+#linha{
     background-color: black;
     height: 0.2%;
     width: 12%;
@@ -76,89 +68,76 @@ p{
     margin-top: 38.5%;
     margin-left: 9%;
 }
-#cadastrar
-{
+#cadastrar{
     height: 30px;
     width: 200px;
     position: absolute;
     margin-top: 593px;
-    margin-left: 185px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 168px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
 }
 
 
-#caixa-email
-{
-    width: 250px;
+#caixa-email{
+    width: 200px;
     height: 60px;
     position: absolute;
     margin-left: 6%;
     margin-top: 18%;
 }
 
-#e-mail
-{
-    width: 250px;
-    height: 35px;
+#e-mail{
+    width: 300px;
+    height: 40px;
     position: absolute;
-    left: 6.08%;
-    right: 70.37%;
-    top: 27%;
+    left: -25px;
+    top: 20px;
     bottom: 54.88%;
     background: #D9D9D9;
     border: none;
     border-radius: 128.5px;
+    font-size: 18px;
 }
-#caixa-senha
-{
+#caixa-senha{
     width: 250px;
     height: 35px;
     position: absolute;
     margin-left: 0.3%;
     margin-top: 4%;
     left: 6.08%;
-    right: 70.37%;
     top: 39.27%;
     bottom: 54.88%;
     border: none;
     border-radius: 128.5px;
 }
-#senha
-{
-    width: 250px;
-    height: 36px;
+#senha{
+    width: 300px;
+    height: 40px;
     position: absolute;
-    left: 7.5%;
-    right: 70.37%;
-    top: 25%;
+    left: -25px;
+    top: 20px;
     bottom: 54.88%;
     border: none;
     background-color: #d9d9d9;
-    border-radius: 128.5px; 
+    border-radius: 128.5px;
+    font-size: 18px;
 }
-#caixa-espec
-{
+#caixa-escolha{
     width: 250px;
     height: 35px;
     position: absolute;
-    margin-left: 0.3%;
-    margin-top: 9.4%;
-    left: 6.08%;
-    right: 70.37%;
-    top: 39.27%;
-    bottom: 54.88%;
+    margin-left: 67px;
+    top: 500px;
     border: none;
     border-radius: 128.5px;
 }
-#espec
-{
-    width: 250px;
-    height: 36px;
+#escolha{
+    width: 300px;
+    height: 40px;
     position: absolute;
-    left: 7.5%;
-    right: 70.37%;
-    top: 39.27%;
-    bottom: 54.88%;
+    margin-left: 67px;
+    top: 500px;
     border: none;
     background-color: #d9d9d9;
     border-radius: 128.5px;
@@ -168,18 +147,6 @@ p{
     position: absolute;
     color: blue;
     margin-top: 410px;
-    margin-left: 180px;
-}
-
-#selecao{
-    width: 250px;
-    height: 36px;
-    position: absolute;
-    left: 7.5%;
-    right: 70.37%;
-    top: 39.27%;
-    bottom: 54.88%;
-    border: none;
-    background-color: #d9d9d9;
-    border-radius: 128.5px;
+    margin-left: 170px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
 }

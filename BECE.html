@@ -9,15 +9,15 @@
 
     <style>
         button{
-        padding: 10px 8px;
+        padding: 10px;
         height: 50px;
         width: 200px;
-        margin-top: 515px;
-        margin-left: 125px;
+        margin-top: 80px;
+        margin-left: -60px;
         background-color: #a124dc;
         color: #ffff;
         font-size: 25px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
         border-radius: 50px;
         border-color:#efefef;
         text-align: center;
@@ -30,6 +30,17 @@
             background-color: #5e1082;
         }
     </style>
+
+<script>
+    function redirecionarPagina() {
+        var select = document.getElementById("opcoes");
+        var opcaoSelecionada = select.options[select.selectedIndex].value;
+
+        if (opcaoSelecionada !== "") {
+            document.location.href = opcaoSelecionada;
+        }
+    }
+</script>
 
 </head>
 <body id="fundo" style="overflow-y: hidden; overflow-x: hidden; background-color: #efefef; size: 100%;">
@@ -50,21 +61,17 @@
 
     <div id="caixa-email"><input id="e-mail" type="email" placeholder="  E-mail"></div>
     <div id="caixa-senha"><input id="senha" type="password" placeholder="  Senha"></div>
-    <div id="caixa-espec">
-
-        <!--<input id="espec" type="text" placeholder="especialidade">-->
-    <select id="selecao">
-    <option>  Escolha:</option>
-    <option>  Oftalmologista</option>
-    <option>  Pediatra</option>
-    <option>  Cardiologista</option>
-    <option>  Odontologia</option>
-    <option>  Organizador</option>
-    <option>  Paciente</option>
-    </select>
-    </div>
     
-    <a href="paciente.html"><button>ENTRAR</button></a>
+        
+    <label for="caixa-escolha" id="caixa-escolha"></label>
+    <select id="escolha">
+        <option value="">Selecione</option>
+        <option value="paciente.html">Paciente</option>
+        <option value="medico.html">Médico</option>
+        <option value="organizador.html">Organizador</option>
+    </select>
+    <button onclick="redirecionarPagina()">Entrar</button>
+    
     <img src="Imagens/logo.png" alt=".jpg" id="logo">
 
 </body>

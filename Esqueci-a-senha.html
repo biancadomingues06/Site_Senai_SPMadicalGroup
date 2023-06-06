@@ -30,23 +30,39 @@
             background-color: #5e1082;
         }
     </style>
+
+    <script>
+        function exibirDiv() {
+            var div = document.getElementById("minhaDiv");
+            div.style.display = "block";
+        }
+    </script>
+
+
 </head>
 <body style="overflow-y: hidden; overflow-x: hidden; background-color: #efefef;">
     
-    <img src="Imagens/esqueci a senha.jpg" alt="Esqueci a senha" style= "height:750px; margin-left: 900px; margin-top:-10px; position: absolute;">
+    <img src="Imagens/senha.jpg" alt="Esqueci a senha" style= "width: 800px; margin-left: 900px; margin-top:-10px; position: absolute;">
 
     <div id="semicirculo-top"></div>
     <div id="circulo_esq"></div>
+
     <a href="BECE.html"><img src="Imagens/voltar.png" alt="voltar" style="width: 80px; margin-top: 610px; margin-left: 25px; position: absolute;"></a>
     <div id="circulo_dir"></div>
 
-    <div id="redef-senha">REDEFINIR A SENHA</div>
+    <div id="letraGG">REDEFINIR A SENHA</div>
     
     <div id="caixa-senha"><input id="senha" type="email" placeholder=""></div>
-    <div id="letra" style="margin-top: 330px;">Email:</div>
 
-    <a href="aviso_senha.html"><button>ENVIAR</button></a>
+    <div id="letraM" style="margin-top: 330px;">Email:</div>
 
-
+    
+    <button onclick="exibirDiv()">ENVIAR</button>
+    <div id="minhaDiv" class="minha-div">
+        <img src="Imagens/atenção.png" alt="atenção" style=" width: 80px; margin-left: 330px;">
+        <div id="letraG">Atenção</div>
+        <div id="letraP">Um email foi enviado com um link. Acesse para mudar sua senha.</div>
+        <a href="Mudar_senha.html" style="color: black;"><div id="letraPP">Acessar email</div></a>
+    </div>
 </body>
 </html>

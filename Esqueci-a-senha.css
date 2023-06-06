@@ -1,13 +1,15 @@
 #caixa-senha{
-    width: 550px;
-    height: 50px;
+    width: 540px;
+    height: 25px;
     position: absolute;
     margin-top: 355px;
     margin-left: 100px;
+    padding: 15px;
+    font-size: 20px;
 }
 #senha{
-    width: 550px;
-    height: 50px;
+    width: 540px;
+    height: 25px;
     position: absolute;
     bottom: 54.88%;
     background: #D9D9D9;
@@ -15,6 +17,8 @@
     border-radius: 50px;
     margin-top: 355px;
     margin-left: 100px;
+    padding: 15px;
+    font-size: 20px;
 }
 
 #caixa-confirme{
@@ -23,6 +27,7 @@
     position: absolute;
     margin-top: 425px;
     margin-left: 135px;
+    padding: 10px;
 }
 
 #confirme{
@@ -35,9 +40,10 @@
     border-radius: 50px;
     margin-top: 425px;
     margin-left: 135px;
+    padding: 10px;
 }
 
-#letra{
+#letraM{
     font-size: 32px;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -45,7 +51,7 @@
     position: absolute;
 }
 
-#redef-senha{
+#letraGG{
     font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
@@ -84,4 +90,39 @@
     border-top-left-radius: 100%;
     background-color: #7f51a4;
     position: absolute;
+}
+
+.minha-div {
+    display: none;
+    background-color: #7f51a4;
+    width: 750px;
+    height: 350px;
+    margin-top: 150px;
+    margin-left: 360px;
+    border-radius: 60px;
+    padding: 50px;
+    opacity: 75%;
+    position: absolute;
+}
+
+#letraG{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#letraP{
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#letraPP{
+    font-size: 20px; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-align: center; 
+    margin-top: 20px;
+
 }

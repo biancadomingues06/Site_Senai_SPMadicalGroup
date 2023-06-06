@@ -1,0 +1,245 @@
+<!--<input id="espec" type="text" placeholder="especialidade"
+    <select id="selecao">
+    <option>  Escolha:</option>
+    <option>  Oftalmologista</option>
+    <option>  Pediatra</option>
+    <option>  Cardiologista</option>
+    <option>  Odontologia</option>
+    <option>  Organizador</option>
+    <option>  Paciente</option>
+    </select>
+    </div>
+ >-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #barra {
+            height: 75px;
+            width: 1536px;
+            position: absolute;
+            margin-top: -16px;
+            margin-left: -8px;
+            background-color: #676767;
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #fundo {
+            background-color: rgb(255, 255, 255);
+        }
+
+        #img {
+            position: absolute;
+            margin-left: 30%;
+            margin-top: 2%;
+            width: 71%;
+            height: 96%;
+        }
+
+        #logo {
+            position: absolute;
+            margin-left: 9%;
+            margin-top: 7.5%;
+            width: 12%;
+            height: 18%;
+        }
+
+        #bola1 {
+            background-color: #7f51a4;
+            height: 100px;
+            border-radius: 50%;
+            top: 2px;
+            width: 10%;
+            margin-left: 255px;
+            position: absolute;
+        }
+
+        #bola2 {
+            background-color: #b87bf4;
+            height: 180px;
+            border-radius: 50%;
+            top: 2%;
+            width: 17%;
+            margin-left: -43px;
+            position: absolute;
+        }
+
+        #bola3 {
+            background-color: #7f51a4;
+            height: 180px;
+            border-radius: 50%;
+            top: 90%;
+            width: 17%;
+            margin-left: 100px;
+            position: absolute;
+        }
+
+        #linha {
+            background-color: black;
+            height: 0.2%;
+            width: 12%;
+            position: absolute;
+            margin-top: 38.5%;
+            margin-left: 9%;
+        }
+
+        #cadastrar {
+            height: 30px;
+            width: 200px;
+            position: absolute;
+            margin-top: 593px;
+            margin-left: 168px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: black;
+        }
+
+        #caixa-email {
+            width: 200px;
+            height: 60px;
+            position: absolute;
+            margin-left: 6%;
+            margin-top: 18%;
+        }
+
+        #e-mail {
+            width: 300px;
+            height: 40px;
+            position: absolute;
+            left: -25px;
+            top: 20px;
+            bottom: 54.88%;
+            background: #D9D9D9;
+            border: none;
+            border-radius: 128.5px;
+            font-size: 18px;
+        }
+
+        #caixa-senha {
+            width: 250px;
+            height: 35px;
+            position: absolute;
+            margin-left: 0.3%;
+            margin-top: 4%;
+            left: 6.08%;
+            top: 39.27%;
+            bottom: 54.88%;
+            border: none;
+            border-radius: 128.5px;
+        }
+
+        #senha {
+            width: 300px;
+            height: 40px;
+            position: absolute;
+            left: -25px;
+            top: 20px;
+            bottom: 54.88%;
+            border: none;
+            background-color: #d9d9d9;
+            border-radius: 128.5px;
+            font-size: 18px;
+        }
+
+        #caixa-escolha {
+            width: 300px;
+            height: 40px;
+            position: absolute;
+            margin-left: 0.3%;
+            margin-top: 9.4%;
+            left: 6.08%;
+            top: 39.27%;
+            bottom: 54.88%;
+            border: none;
+            border-radius: 128.5px;
+        }
+
+        #opcoes {
+            width: 300px;
+            height: 40px;
+            position: absolute;
+            left: -25px;
+            top: 30px;
+            bottom: 54.88%;
+            border: none;
+            background-color: #d9d9d9;
+            border-radius: 128.5px;
+        }
+
+        button {
+            padding: 10px 8px;
+            height: 50px;
+            width: 200px;
+            margin-top: 80px;
+            margin-left: -60px;
+            background-color: #a124dc;
+            color: #ffff;
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+            border-radius: 50px;
+            border-color: #efefef;
+            text-align: center;
+            user-select: none;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        button:hover {
+            background-color: #5e1082;
+        }
+    </style>
+
+    <script>
+        function redirecionarPagina() {
+            var select = document.getElementById("opcoes");
+            var opcaoSelecionada = select.options[select.selectedIndex].value;
+
+            if (opcaoSelecionada !== "") {
+                document.location.href = opcaoSelecionada;
+            }
+        }
+    </script>
+
+</head>
+<body id="fundo" style="overflow-y: hidden; overflow-x: hidden; background-color: #efefef; size: 100%;">
+
+<div id="linha"></div>
+
+<img src="Imagens/medico segurando coraçao.jpg" alt=".jpg" id="img">
+
+<div id="cadastrar">
+    <a href="Escolha2.0.html">
+        <p style="text-decoration: underline; color: black; ">Cadastre-se</p>
+    </a>
+</div>
+
+<a href="Esqueci-a-senha.html">
+    <div id="esqueci-senha" style="color: blue; text-decoration: underline;">Esqueci a senha</div>
+</a>
+
+
+
+<div id="caixa-escolha">
+    <label for="opcoes" id="escolha"></label>
+    <select id="opcoes">
+        <option value="">Selecione</option>
+        <option value="paciente.html">Paciente</option>
+        <option value="medico.html">Médico</option>
+        <option value="organizador.html">Organizador</option>
+    </select>
+    <button onclick="redirecionarPagina()">Entrar</button>
+</div>
+
+<img src="Imagens/logo.png" alt=".jpg" id="logo">
+
+</body>
+</html>
