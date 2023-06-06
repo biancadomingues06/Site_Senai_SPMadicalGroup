@@ -8,12 +8,13 @@
     <link rel="shortcut icon" href="Imagens/icon logo.png" type="image/x-icon">
 
     <style>
+
         button{
         padding: 10px;
         height: 50px;
         width: 200px;
-        margin-top: 80px;
-        margin-left: -60px;
+        margin-top: 520px;
+        margin-left: 110px;
         background-color: #a124dc;
         color: #ffff;
         font-size: 25px;
@@ -31,22 +32,23 @@
         }
     </style>
 
-<script>
-    function redirecionarPagina() {
-        var select = document.getElementById("opcoes");
-        var opcaoSelecionada = select.options[select.selectedIndex].value;
+    <script>
+        function redirecionarPagina() {
+            var select = document.getElementById("opcoes");
+            var opcaoSelecionada = select.options[select.selectedIndex].value;
 
-        if (opcaoSelecionada !== "") {
+            if (opcaoSelecionada !== "") {
             document.location.href = opcaoSelecionada;
-        }
+            }
     }
-</script>
+    </script>
 
 </head>
 <body id="fundo" style="overflow-y: hidden; overflow-x: hidden; background-color: #efefef; size: 100%;">
     
     <div id="linha"></div>
-
+    <div id="bola1"></div>
+    
     <img src="Imagens/medico segurando coraçao.jpg" alt=".jpg" id="img">
 
     <a href="Escolha2.0.html"><div id="cadastrar"> <p style="text-decoration: underline; color: black; ">Cadastre-se</p></button></div>
@@ -54,7 +56,7 @@
 
     <a href="Esqueci-a-senha.html"> <div id="esqueci-senha" style="color: blue; text-decoration: underline;">Esqueci a senha</div></a>
 
-    <div id="bola1"></div>
+
     <div id="bola2"></div> 
     <div id="bola3"></div>
     <div id="barra"> <p style="margin-left: 35px; margin-top: 30px;"> Endereço: Rua Presidente Prudente, 1007- Jardim Botânico, Salto-SP</p> <p style="margin-left: 1200px; margin-top:-42px;">Telefone da Clínica: 4029 - 5598</p> </div>
@@ -62,15 +64,17 @@
     <div id="caixa-email"><input id="e-mail" type="email" placeholder="  E-mail"></div>
     <div id="caixa-senha"><input id="senha" type="password" placeholder="  Senha"></div>
     
-        
-    <label for="caixa-escolha" id="caixa-escolha"></label>
-    <select id="escolha">
-        <option value="">Selecione</option>
-        <option value="paciente.html">Paciente</option>
-        <option value="medico.html">Médico</option>
-        <option value="organizador.html">Organizador</option>
-    </select>
-    <button onclick="redirecionarPagina()">Entrar</button>
+
+    <div id="caixa-escolha" style="margin-top: -460px; margin-left: 10px;">
+        <label for="opcoes" id="escolha"></label>
+        <select id="opcoes">
+            <option value="">Selecione</option>
+            <option value="paciente.html">Paciente</option>
+            <option value="medico.html">Médico</option>
+            <option value="organizador.html">Organizador</option>
+        </select>
+        <button onclick="redirecionarPagina()">Entrar</button>
+    </div>
     
     <img src="Imagens/logo.png" alt=".jpg" id="logo">
 
