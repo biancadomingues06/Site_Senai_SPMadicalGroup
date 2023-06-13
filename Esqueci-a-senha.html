@@ -29,6 +29,14 @@
         button:hover{
             background-color: #5e1082;
         }
+
+        .hover-zoom {
+            transition: transform 0.3s;
+        }
+
+        .hover-zoom:hover {
+            transform: scale(1.05);
+        }
     </style>
 
     <script>
@@ -52,17 +60,17 @@
 
     <div id="letraGG">REDEFINIR A SENHA</div>
     
-    <div id="caixa-senha"><input id="senha" type="email" placeholder=""></div>
+    <div id="caixa-email"><input id="email" type="email" placeholder=""></div>
 
     <div id="letraM" style="margin-top: 330px;">Email:</div>
 
     
-    <button onclick="exibirDiv()">ENVIAR</button>
+    <button onclick="exibirDiv()" class="hover-zoom">ENVIAR</button>
     <div id="minhaDiv" class="minha-div">
         <img src="Imagens/atenção.png" alt="atenção" style=" width: 80px; margin-left: 330px;">
         <div id="letraG">Atenção</div>
         <div id="letraP">Um email foi enviado com um link. Acesse para mudar sua senha.</div>
-        <a href="Mudar_senha.html" style="color: black;"><div id="letraPP">Acessar email</div></a>
+        <a href="Mudar_senha.html" style="color: black;"><div id="letraPP" class="hover-zoom">Acessar email</div></a>
     </div>
 </body>
 </html>

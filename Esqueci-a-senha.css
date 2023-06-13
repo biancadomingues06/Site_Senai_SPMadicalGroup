@@ -1,4 +1,4 @@
-#caixa-senha{
+#caixa-email{
     width: 540px;
     height: 25px;
     position: absolute;
@@ -7,7 +7,7 @@
     padding: 15px;
     font-size: 20px;
 }
-#senha{
+#email{
     width: 540px;
     height: 25px;
     position: absolute;
@@ -19,41 +19,19 @@
     margin-left: 100px;
     padding: 15px;
     font-size: 20px;
-}
-
-#caixa-confirme{
-    width: 550px;
-    height: 50px;
-    position: absolute;
-    margin-top: 425px;
-    margin-left: 135px;
-    padding: 10px;
-}
-
-#confirme{
-    width: 550px;
-    height: 50px;
-    position: absolute;
-    bottom: 54.88%;
-    background: #D9D9D9;
-    border: none;
-    border-radius: 50px;
-    margin-top: 425px;
-    margin-left: 135px;
-    padding: 10px;
 }
 
 #letraM{
     font-size: 32px;
     color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
     margin-left: 75px;
     position: absolute;
 }
 
 #letraGG{
     font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
     color: black;
     margin-left: 240px;
     margin-top: 190px;

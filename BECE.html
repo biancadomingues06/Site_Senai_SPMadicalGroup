@@ -30,6 +30,14 @@
         button:hover{
             background-color: #5e1082;
         }
+
+        .hover-zoom {
+            transition: transform 0.3s;
+        }
+
+        .hover-zoom:hover {
+            transform: scale(1.05);
+        }
     </style>
 
     <script>
@@ -51,10 +59,10 @@
     
     <img src="Imagens/medico segurando coraçao.jpg" alt=".jpg" id="img">
 
-    <a href="Escolha2.0.html"><div id="cadastrar"> <p style="text-decoration: underline; color: black; ">Cadastre-se</p></button></div>
+    <a href="Escolha2.0.html"><div id="cadastrar"> <p style="text-decoration: underline; color: black;" class="hover-zoom">Cadastre-se</p></button></div>
     </div></a>
 
-    <a href="Esqueci-a-senha.html"> <div id="esqueci-senha" style="color: blue; text-decoration: underline;">Esqueci a senha</div></a>
+    <a href="Esqueci-a-senha.html"> <div id="esqueci-senha" style="color: blue; text-decoration: underline;" class="hover-zoom">Esqueci a senha</div></a>
 
 
     <div id="bola2"></div> 
@@ -73,7 +81,7 @@
             <option value="medico.html">Médico</option>
             <option value="organizador.html">Organizador</option>
         </select>
-        <button onclick="redirecionarPagina()">Entrar</button>
+        <button onclick="redirecionarPagina()" class="hover-zoom">Entrar</button>
     </div>
     
     <img src="Imagens/logo.png" alt=".jpg" id="logo">
