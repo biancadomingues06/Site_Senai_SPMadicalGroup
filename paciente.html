@@ -6,46 +6,80 @@
     <link rel="stylesheet" href="paciente.css">
     <title>SP Medical Group - Paciente</title>
     <link rel="shortcut icon" href="Imagens/icon logo.png" type="image/x-icon">
+
+    <style>
+        .hover-zoom {
+            transition: transform 0.3s;
+        }
+
+        .hover-zoom:hover {
+            transform: scale(1.05);
+        }
+    </style>
+
+
+<script>
+    function exibirDiv() {
+        var div = document.getElementById("minhaDiv");
+        if (div.style.display === "block") {
+            div.style.display = "none"; // Esconde a div quando já estiver visível
+        } else {
+            div.style.display = "block"; // Mostra a div quando estiver escondida
+        }
+    }
+    </script>
+
 </head>
+
+
 <body style="overflow-y: hidden; overflow-x: hidden; background-color: #efefef;">
     
     <div id="bola1"></div>
     <div id="bola2"></div>
+    <div id="linha" style="margin-left: 1266px;"></div>
+    <div id="linha" style="margin-left: 708px;"></div>
 
-    <img src="Imagens/odonto.png" alt="png" id="img">
-    <img src="Imagens/oftalmo.png" alt="png" id="img2">
-    <img src="Imagens/cardio.png" alt="png" id="img3">
-    <img src="Imagens/pediatra.png" alt="png" id="img4">
+    <img src="Imagens/odonto.png" alt="png" id="img" class="hover-zoom">
+    <img src="Imagens/oftalmo.png" alt="png" id="img2" class="hover-zoom">
+    <img src="Imagens/cardio.png" alt="png" id="img3" class="hover-zoom">
+    <img src="Imagens/pediatra.png" alt="png" id="img4" class="hover-zoom">
 
-    <div id="linha"></div>
-    <div id="linha2"></div>
-    <div id="pendente"> <p>Consultas Pendentes</p></div>
-    <div id="concluido"> <p>Consultas Concluídas</p></div>
+    <div id="retangulo" style="margin-left: 280px; " > Consultas Pendentes</div>
+    <div id="retangulo" style="margin-left: 840px;"> Consultas Concluídas</div>
 
-    <a href="BECE.html"> <img src="Imagens/perfil.png" alt="png" id="voltar-icone" 
-        style="margin-top: 650px; margin-left: 20px;"></a>
+
+    <button onclick="exibirDiv()" class="botao-div" style="background:none; border: none;">
+        <img src="Imagens/configure-icon.png" alt="Botão Imagem"  class="hover-zoom" style="width: 75px;" p>
+      </button>
+
+      <div id="minhaDiv" class="minha-div">
+        <a href="Perfil-paciente.html" style="text-decoration: none;">
+            <div id="perfil-sair" class="hover-zoom">Perfil</div>
+        </a>
+        <a href="BECE.html" style="text-decoration: none;">
+            <div id="perfil-sair" class="hover-zoom" style="margin-top: 45px">Sair</div></a>
+      </div>
+
+      <script>
+        function exibirDiv() {
+          var div = document.getElementById("minhaDiv");
+          div.classList.toggle("aparecer");
+        }
+      </script>
+
+
 
     <div id="consulta">
-        <div id="texto1">
-            <li >Cardiologista- Dra. Priscila</li>
-            <li >20/12/2024</li>
-            <li > consulta Anual (Rotina)</li>
+        <div id="texto">
+            <li >Cardiologista: Dra. Priscila</li>
+            <li >Data: 20/12/2022</li>
+            <li >Consulta: Anual (Rotina)</li>
         </div>
     </div>
-    <div id="bolinha-mais">
-    </div>
-    <div id="consulta2">
-        <div id="texto1">
-            <li>Oftalmologista - Dr. Jonas</li>
-            <li>10/02/2024</li>
-            <li>Consulta marcada (sintomas)</li>
-        </div>  
-    </div>
 
-    <div id="boll-detal"></div>
-    <a href="detalhes.html"> <img src="Imagens/mais.png" alt="png" id="mais"></a>
+        <div id="bolinha"><img src="Imagens/mais-icon.png" alt="mais" style="width: 75px;"></div>
 
-    <a href="detalhes2.html"> <img src="Imagens/mais.png" alt="png" id="mais2"></a>
+    
 </body>
     
 </html>

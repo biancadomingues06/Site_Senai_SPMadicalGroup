@@ -1,167 +1,164 @@
-p
-{
-    font-size: 1.8em;
-    margin-top: 14px;
-}
-#paciente
-{
-    width: 12px; ;
-    height: 12px;
-    border-radius: 50%;
-    position: absolute;
-    margin-top: -11.92%;
-    margin-left:79.53%;
-    top: -15.69%;
-    bottom: 66.92%;
-    background: #7F51A4;
-}
-#bola1
-{
+#bola1{
     background-color: #a124dc;
-    height: 265px;
+    height: 300px;
+    width: 300px;
+    top: -100px;
+    margin-left: -130px;
     border-radius: 50%;
-    top: -35px;
-    width: 23%;
-    margin-left: -75px;
     position: absolute;
 }
-#bola2
-{ 
+
+#bola2{ 
     background-color: #b87bf4;
     height: 250px;
+    width: 300px;
+    top: 600px;
+    margin-left: 555px;
     border-radius: 50%;
-    top: 80%;
-    width: 20%;
-    margin-left: 545px;
     position: absolute;
 }
-#img
-{
+
+#img{
     height: 150px;
     width: 175px;
-    margin-top: 2.2%;
-    margin-left: 1300px;
+    top: 50px;
+    margin-left: 1315px;
     position: absolute;
 }
-#img2
-{
+
+#img2{
     height: 150px;
     width: 170px;
-    margin-top: 13%;
-    margin-left: 1310px;
+    top: 220px;
+    margin-left: 1325px;
     position: absolute;
 }
-#img3
-{
+
+#img3{
     height: 150px;
     width: 168px;
-    margin-top: 24%;
-    margin-left: 1310px;
+    top: 380px;
+    margin-left: 1325px;
     position: absolute;
 }
-#img4
-{
+
+#img4{
     height: 150px;
     width: 168px;
-    margin-top: 36%;
-    margin-left: 1310px;
+    margin-top: 540px;
+    margin-left: 1325px;
     position: absolute;
 }
-#linha
-{
+
+#linha{
     background-color: black;
-    height: 85%;
-    width: 0.1%;
+    height: 500px;
+    width: 1.5px;
+    margin-top: 85px;
     position: absolute;
-    margin-top: 3.5%;
-    margin-left: 83%;
 }
-#linha2
-{
-    background-color: black;
-    height: 85%;
-    width: 0.1%;
-    position: absolute;
-    margin-top: 3.5%;
-    margin-left: 45%;
-}
-#pendente
-{
+
+#retangulo{
     width: 295px;
-    height: 70px;
-    position: absolute;
-    margin-left: 12%;
-    margin-top: 5%;
+    height: 50px;
+    margin-top: 100px;
     background-color: #a29f9f;
     border-radius: 100px;
     text-align: center;
-}
-#concluido
-{
-    width: 295px;
-    height: 70px;
-    position: absolute;
-    margin-left: 55%;
-    margin-top: 5%;
-    background-color: #a29f9f;
-    border-radius: 100px;
-    text-align: center;
-}
-#voltar-icone
-{
-    height: 55px;
-    width: 55px;
-    margin-top: 670px;
-    margin-left: 25px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 20px;
     position: absolute;
 }
-#consulta
-{
-    width: 380px;
-    height: 125px;
-    position: absolute;
-    margin-left: 52%;
-    margin-top: 26.5%;
+
+.minha-div {
+    top: 0;
+    left: -200px;
+    width: 180px;
+    height: 780px;
     background-color: #8b8a8a;
-    border-radius: 50px;
-    text-align: left;
+    opacity: 80%;
+    transition: left 1s;
+    z-index: 1;
+    position: absolute;
+  }
+
+.aparecer{
+    left: 0;
 }
-#texto1
-{
-    font-size: 125%;
-    margin-top: 30px;
-    margin-left: 10%;
-    list-style: none;
-}
-#bolinha-mais
-{
-    background-color:#7f51a4;
-    height: 75px;
-    border-radius: 50%;
-    top: 485px;
-    width: 75px;
-    margin-left: 1080px;
+
+.botao-div {
+    top: 620px;
+    left: 42px;
+    z-index: 2;
+    position: absolute;
+  }
+
+#perfil-sair{
+    width: 180px;
+    height: 50px;
+    top: 60px;
+    left: -10px;
+    color: #ffff;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    text-align: center;
     position: relative;
 }
+
+#consulta{
+    width: 380px;
+    height: 125px;
+    margin-left: 800px;
+    margin-top: 190px;
+    background-color: #8b8a8a;
+    border-radius: 50px;
+    text-align: justify;
+    position: absolute;
+}
+
+#texto{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    list-style: none;
+    position: absolute;
+}
+
+#bolinha{
+    background-color:#7f51a4;
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    margin-top: 260px;
+    margin-left: 1120px;
+    position: absolute;
+}
+
+#mais-infos{
+    
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
 #img5
 {
     height: 50px;
     width: 50px;
     margin-top: 15px;
     margin-left: 11.5px;
-    position: relative;
-}
-#consulta2
-{
-    width: 380px;
-    height: 125px;
     position: absolute;
-    margin-left: 52%;
-    margin-top: 10%;
-    background-color: #8b8a8a;
-    border-radius: 50px;
-    text-align: left;
 }
+
 #boll-detal
 {
     background-color: #7F51A4;
@@ -178,7 +175,7 @@ p
     width: 50px;
     margin-top: 15px;
     margin-left: 11.5px;
-    position: relative;
+    position: absolute;
 }
 #mais
 {
@@ -186,7 +183,7 @@ p
     width: 50px;
     margin-top: 425px;
     margin-left: 1090px;
-    position: relative;
+    position: absolute;
 }
 #mais2
 {

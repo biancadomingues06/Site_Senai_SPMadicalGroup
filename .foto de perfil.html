@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Botão para Adicionar Foto de Perfil</title>
+    <style>
+        #botaoAdicionarFoto {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px dashed #ccc;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+            overflow: hidden;
+        }
+
+        #botaoAdicionarFoto:hover {
+            transform: scale(1.05);
+        }
+
+        #inputFoto {
+            display: none;
+        }
+
+        #fotoPerfil {
+            max-width: 100%;
+            max-height: 100%;
+            display: none;
+        }
+    </style>
+
+
+
+
+<!--
+<style>
+    .div-botao {
+      display: none;
+    }
+
+    .div-botao.mostrar {
+      display: block;
+    }
+
+    .botao {
+      margin: 5px;
+      padding: 10px;
+      background-color: #ccc;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+-->
+
+
+<style>
+    .minha-div {
+      position: absolute;
+      top: 0;
+      left: -200px;
+      width: 200px;
+      height: 200px;
+      background-color: #f1f1f1;
+      transition: left 1s;
+      z-index: 1;
+    }
+    
+    .aparecer {
+      left: 0;
+    }
+
+    .botao-div {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 2;
+    }
+  </style>
+
+
+
+
+<body>
+
+    <button onclick="exibirDiv()" class="botao-div">Mostrar Div</button>
+
+    <div id="minhaDiv" class="minha-div">
+      <p>Conteúdo da Div</p>
+    </div>
+  
+    <script>
+      function exibirDiv() {
+        var div = document.getElementById("minhaDiv");
+        div.classList.toggle("aparecer");
+      }
+    </script>
+
+
+<!--
+    <h1>Adicionar Foto de Perfil</h1>
+
+    <label for="inputFoto" id="botaoAdicionarFoto">
+        <input type="file" id="inputFoto" accept="image/*">
+        <img id="fotoPerfil" src="#" alt="Foto de Perfil">
+    </label>
+  
+    <script>
+        document.getElementById('inputFoto').addEventListener('change', function(e) {
+            var img = document.getElementById('fotoPerfil');
+          
+            var file = e.target.files[0];
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                img.src = e.target.result;
+                img.style.display = 'block';
+            }
+
+            reader.readAsDataURL(file);
+        });
+    </script>
+
+
+
+
+
+
+<button class="botao" onclick="exibirDiv()">Mostrar Div</button>
+
+<div id="minhaDiv" class="div-botao">
+  <button class="botao">Botão 1</button>
+  <button class="botao">Botão 2</button>
+  <button class="botao">Botão 3</button>
+</div>
+
+<script>
+  function exibirDiv() {
+    var div = document.getElementById("minhaDiv");
+    div.classList.toggle("mostrar");
+  }
+</script>
+
+
+
+
+
+<button class="botao" onclick="exibirDiv()">Mostrar Div</button>
+
+<div id="minhaDiv" class="minha-div">
+  <p>Conteúdo da Div</p>
+</div>
+
+<script>
+  function exibirDiv() {
+    var div = document.getElementById("minhaDiv");
+    div.classList.add("aparecer");
+  }
+</script>
+-->
+
+
+
+</body>
+</html>
