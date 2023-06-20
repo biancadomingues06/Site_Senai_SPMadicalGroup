@@ -29,6 +29,14 @@
         button:hover{
             background-color: #5e1082;
         }
+
+        .hover-zoom {
+            transition: transform 0.3s;
+        }
+
+        .hover-zoom:hover {
+            transform: scale(1.05);
+        }
     </style>
 
 </head>
@@ -37,13 +45,13 @@
     <div id="bolinha1"></div>
     <div id="bolinha3"></div>
 
-    <img src="Imagens/logo.png" alt="png" id="logo" style="margin-top: 620px; margin-left: 962px;">
+    <img src="Imagens/logo.png" alt="Logo" id="logo">
 
     <p id="texto1">CADASTRO</p>
     <p id="texto2">Dados pessoais:</p>
     <p id="texto3">Dados da conta:</p>
 
-    <img src="Imagens/Cadastro paciente.jpg" alt="png" id="img">
+    <img src="Imagens/Cadastro paciente.jpg" alt="Cadastro Paciente" id="img">
 
     <div id="bolinha2"></div>
 
@@ -61,13 +69,13 @@
         <option>Sexo:</option>
         <option>Masculino</option>
         <option>Feminino</option>
+        <option>Outro</option>
         <option>Prefiro não informar</option>
     </select>
 
-    <a href="BECE.html"><button>CADASTRE-SE</button></a>
+    <a href="BECE.html"><button class="hover-zoom">CADASTRE-SE</button></a>
 
-    <a href="Escolha2.0.html"><img src="Imagens/voltar.png" alt="png" id="voltar" 
-        style="margin-top: 625px;"></a>
+    <a href="Escolha2.0.html"><img src="Imagens/voltar-icon.png" alt="Voltar" id="voltar" class="hover-zoom"></a>
     
     <img src="Imagens/ponto-icon.png" alt="png" id="circulo">
     <img src="Imagens/ponto-icon.png" alt="png" id="circulo2">

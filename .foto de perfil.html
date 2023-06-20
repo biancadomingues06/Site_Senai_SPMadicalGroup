@@ -55,7 +55,7 @@
   </style>
 -->
 
-
+<!--
 <style>
     .minha-div {
       position: absolute;
@@ -99,7 +99,7 @@
     </script>
 
 
-<!--
+
     <h1>Adicionar Foto de Perfil</h1>
 
     <label for="inputFoto" id="botaoAdicionarFoto">
@@ -161,7 +161,18 @@
 </script>
 -->
 
+<button onclick="confirmarSaida()">Sair do Perfil</button>
 
+<script>
+function confirmarSaida() {
+    var confirmar = confirm("Tem certeza que deseja sair do perfil?");
+
+    if (confirmar) {
+        // Aqui você pode adicionar a lógica para sair do perfil
+        alert("Perfil saiu com sucesso!");
+    }
+}
+</script>
 
 </body>
 </html>

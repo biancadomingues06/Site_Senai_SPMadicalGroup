@@ -228,20 +228,18 @@
     position: absolute;
 }
 
-#logo
-{
-    width: 90px;
-    height: 75px;
-    margin-top: 650px;
-    margin-left: 985px;
+#logo{
+    width: 120px;
+    margin-top: 620px;
+    margin-left: 940px;
     position: absolute;
 }
+
 #voltar
 {
-    width: 80px;
-    height: 75px;
-    margin-top: 650px;
-    margin-left: 15px;
+    width: 60px;
+    margin-top: 625px;
+    margin-left: 30px;
     position: absolute;
 }
 #circulo

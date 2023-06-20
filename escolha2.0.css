@@ -35,13 +35,13 @@ img{
     background-color: #7f51a4;
 }
 
-  .minha-div {
+.minha-div {
     display: none;
     background-color: #898989;
-    color: #efefef;
+    color: #000;
     width: 180px;
     height: 80px;
-    margin-top: 480px;
+    margin-top: 470px;
     margin-left: 1240px;
     border-radius: 30px;
     position: absolute;

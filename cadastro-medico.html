@@ -29,6 +29,14 @@
         button:hover{
             background-color: #5e1082;
         }
+
+        .hover-zoom {
+            transition: transform 0.3s;
+        }
+
+        .hover-zoom:hover {
+            transform: scale(1.05);
+        }
     </style>
 
 </head>
@@ -61,12 +69,13 @@
         <option>Sexo:</option>
         <option>Masculino</option>
         <option>Feminino</option>
+        <option>Outro</option>
         <option>Prefiro não informar</option>
     </select>
 
-    <a href="BECE.html"><button>CADASTRE-SE</button></a>
+    <a href="BECE.html"><button class="hover-zoom">CADASTRE-SE</button></a>
 
-    <a href="Escolha2.0.html"><img src="Imagens/voltar.png" alt="png" id="voltar" 
+    <a href="Escolha2.0.html"><img src="Imagens/voltar-icon.png" alt="Voltar" id="voltar" class="hover-zoom" 
         style="margin-top: 625px;"></a>
     
     <img src="Imagens/ponto-icon.png" alt="png" id="circulo">

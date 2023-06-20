@@ -7,7 +7,7 @@ margin-left: -8px;
 background-color: #676767;
 }
 
-p{
+#infos{
     color: white; 
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -23,7 +23,6 @@ p{
     width: 71%;
     height: 96%;
 }
-
 
 #logo{
     position: absolute;
@@ -66,14 +65,14 @@ p{
     height: 1px;
     position: absolute;
     margin-top: 590px;
-    margin-left: 110px
+    margin-left: 120px
 }
 #cadastrar{
     height: 30px;
     width: 200px;
     position: absolute;
     margin-top: 590px;
-    margin-left: 150px;
+    margin-left: 170px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
 }
@@ -162,6 +161,6 @@ p{
     position: absolute;
     color: blue;
     margin-top: 420px;
-    margin-left: 150px;
+    margin-left: 160px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
 }

@@ -1,9 +1,60 @@
+<!--
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="paciente.css">
+    <title>Exemplo de Botão com Div</title>
+    <style>
+        .botao {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .conteudo {
+            display: none;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            transition: opacity 0.5s ease;
+        }
+
+        .conteudo.aparecer {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+    <script>
+        function exibirDiv() {
+            var div = document.getElementById("conteudoDiv");
+            div.classList.toggle("aparecer");
+        }
+    </script>
+</head>
+<body>
+    <button class="botao" onclick="exibirDiv()">Exibir Div</button>
+    <div id="conteudoDiv" class="conteudo">
+        <h3>Conteúdo da Div</h3>
+        <p>Este é um exemplo de div que aparece ao clicar no botão.</p>
+    </div>
+</body>
+</html>
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paciente copy.css">
     <title>SP Medical Group - Paciente</title>
     <link rel="shortcut icon" href="Imagens/icon logo.png" type="image/x-icon">
 
@@ -29,11 +80,19 @@
     }
     </script>
 
+<script>
+    function exibirDiv() {
+        var div = document.getElementById("detalhesDiv");
+        div.classList.toggle("aparecer");
+    }
+</script>
+
 </head>
 
 
 <body style="overflow-y: hidden; overflow-x: hidden; background-color: #efefef;">
-    
+ 
+<!--
     <div id="bola1"></div>
     <div id="bola2"></div>
     <div id="linha" style="margin-left: 1266px;"></div>
@@ -52,7 +111,7 @@
         <img src="Imagens/config-icon.png" alt="Configurações"  class="hover-zoom" style="width: 75px;" p>
       </button>
 
-      <div id="minhaBarra" class="minha-barra ">
+      <div id="minhaBarra" class="minha-barra">
         <a href="Perfil-paciente.html" style="text-decoration: none;">
             <button id="perfil-sair" class="hover-zoom">Perfil</button>
         </a>
@@ -71,9 +130,10 @@
       <script>
         function exibirBarra() {
           var div = document.getElementById("minhaBarra");
-          div.classList.toggle("mostrar");
+          div.classList.toggle("exibir");
         }
       </script>
+-->
 
 
 
@@ -84,8 +144,15 @@
             <li >Consulta: Anual (Rotina)</li>
         </div>
     </div>
+
+    <button class="botao-detalhes" onclick="exibirDiv()" ><img src="Imagens/mais-icon.png" alt="mais" class="hover-zoom"></button>
+    <div id="detalhesDiv" class="detalhes">
+        <h3>Conteúdo da Div</h3>
+        <p>Este é um exemplo de div que aparece ao clicar no botão.</p>
+    </div>
         
     
 </body>
     
 </html>
+
