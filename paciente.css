@@ -124,42 +124,117 @@
     margin-top: 16px;
     margin-left: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    padding-top: 10px;
     list-style: none;
     position: absolute;
 }
 
-
-#bolinha{
-    background-color:#7f51a4;
-    height: 75px;
-    width: 75px;
-    border-radius: 50px;
-    margin-top: 260px;
+#botao-mais{
+    margin-top: 270px;
     margin-left: 1120px;
-    position: absolute;
-}
-
-#botao-detalhes{
-    margin-top: 260px;
-    margin-left: 110px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: #a124dc;
+    border-radius: 100px;
     cursor: pointer;
     position: absolute;
 }
 
-#detalhes{
-    margin-top: 140px;
-    margin-left: 250px;
-    width: 830px;
-    height: 450px;
-    border-radius: 160px;
-    background-color: #8b8a8a;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    border: none;
+.minha-div {
+    display: none;
+    background-color: #898989;
+    width: 850px;
+    height: 400px;
+    margin-top: 95px;
+    margin-left: 260px;
+    border-radius: 80px;
+    padding: 50px;
     position: absolute;
 }
 
-.detalhes.aparecer {
-    display: block;
-    opacity: 1;
+#botao-menos{
+    margin-top: 50px;
+    margin-left: 820px;
+    width: 90px;
+    height: 80px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #a124dc;
+    border-radius: 100px;
+    cursor: pointer;
+    position: absolute;
+}
+
+#letraG{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+
+#consulta2{
+    width: 380px;
+    height: 125px;
+    margin-left: 235px;
+    margin-top: 190px;
+    background-color: #8b8a8a;
+    border-radius: 50px;
+    text-align: justify;
+    position: absolute;
+}
+
+#texto2{
+    font-size: 20px;
+    margin-top: 16px;
+    margin-left: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    padding-top: 10px;
+    list-style: none;
+    position: absolute;
+}
+#botao-mais2{
+    margin-top: 270px;
+    margin-left: 550px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: #a124dc;
+    border-radius: 100px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.minha-div2{
+    display: none;
+    background-color: #898989;
+    width: 850px;
+    height: 400px;
+    margin-top: 95px;
+    margin-left: 260px;
+    border-radius: 80px;
+    padding: 50px;
+    position: absolute;
+}
+
+#botao-menos2{
+    margin-top: 50px;
+    margin-left: 820px;
+    width: 90px;
+    height: 80px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #a124dc;
+    border-radius: 100px;
+    cursor: pointer;
+    position: absolute;
+}
+
+#letraG2{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-top: 10px;
 }
