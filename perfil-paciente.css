@@ -1,0 +1,122 @@
+#letraG{
+    font-size: 27px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    margin-left: 480px;
+    position: absolute;
+}
+
+#caixa-nome
+{
+    width: 350px;
+    height: 35px;
+    margin-left: 520px ;
+    margin-top: 160px;
+    position: absolute;
+}
+
+#nome
+{
+    width: 350px;
+    height: 35px;
+    padding: 10px;
+    font-size: 18px;
+    bottom: 54.88%;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 128.5px;
+    position: absolute;
+}
+
+#caixa-numero{
+    width: 350px;
+    height: 35px;
+    position: absolute;
+    margin-left: 520px ;
+    margin-top: 270px;
+}
+
+#numero{
+    width: 350px;
+    height: 35px;
+    padding: 10px;
+    font-size: 18px;
+    bottom: 54.88%;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 128.5px;
+    position: absolute;
+}
+
+#caixa-nascimento{
+    width: 350px;
+    height: 35px;
+    position: absolute;
+    margin-left: 1000px ;
+    margin-top: 160px;
+}
+
+#nascimento{
+    width: 350px;
+    height: 35px;
+    padding: 10px;
+    font-size: 18px;
+    bottom: 54.88%;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 128.5px;
+    position: absolute;
+}
+
+#selecao{
+    width: 370px;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 1000px;
+    bottom: 54.88%;
+    border: none;
+    background-color: #d9d9d9;
+    border-radius: 128.5px;
+    position: absolute;
+}
+
+#caixa-email{
+    width: 350px;
+    height: 35px;
+    margin-left: 520px ;
+    margin-top: 460px;
+    position: absolute;
+}
+
+#e-mail{
+    width: 350px;
+    height: 35px;
+    bottom: 54.88%;
+    padding: 10px;
+    font-size: 18px;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 128.5px;
+    position: absolute;
+}
+
+#caixa-senha{
+    width: 350px;
+    height: 35px;
+    position: absolute;
+    margin-left: 1000px ;
+    margin-top: 460px;
+}
+
+#senha{
+    width: 350px;
+    height: 35px;
+    bottom: 54.88%;
+    padding: 10px;
+    font-size: 18px;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 128.5px;
+    position: absolute;
+}

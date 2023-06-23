@@ -125,20 +125,7 @@
     border-radius: 128.5px;
 }
 
-#selecao
-{
-    width: 350px;
-    height: 35px;
-    position: absolute;
-    margin-left: 606px;
-    margin-top: 258px;
-    top: 0%;
-    left: 0%;
-    bottom: 54.88%;
-    border: none;
-    background-color: #d9d9d9;
-    border-radius: 128.5px;
-}
+
 
 #caixa-acesso
 {

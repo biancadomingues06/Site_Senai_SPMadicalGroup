@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SP Medical Group - Perfil </title>
+    <link rel="stylesheet" href="perfil-paciente.css">
+    <link rel="shortcut icon" href="Imagens/icon logo.png" type="image/x-icon">
+
+    <style>
+        button{
+        padding: 10px 8px;
+        height: 60px;
+        width: 240px;
+        margin-top: 570px;
+        margin-left: 860px;
+        background-color: #a124dc;
+        color: #ffff;
+        font-size: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border-radius: 50px;
+        border-color:#efefef;
+        text-align: center;
+        user-select: none;
+        cursor: pointer;
+        position: absolute;
+        }
+
+        button:hover{
+            background-color: #5e1082;
+        }
+
+        .hover-zoom {
+            transition: transform 0.3s;
+        }
+
+        .hover-zoom:hover {
+            transform: scale(1.05);
+        }
+    </style>
+
 </head>
-<body>
-    Perfil paciente
+<body style="overflow-y: hidden; overflow-x: hidden; background-color: #efefef;">
+
+    <img src="Imagens/perfil-paciente-img.jpg" alt="Perfil Paciente" style="height: 700px; margin-top: -10px; margin-left: -10px; position: absolute;" >
+    <img src="Imagens/logo.png" alt="Logo" style="width: 140px; margin-top: 560px; margin-left: 1320px; position: absolute;">
+    <a href="paciente.html"><img src="Imagens/voltar-icon.png" alt="Voltar" style="width: 70px; margin-top: 590px; margin-left: 460px; position: absolute;" class="hover-zoom"></a>
+
+    <div id="letraG" style="margin-top: 50px;">DADOS PESSOAIS: </div>
+    <div id="letraG" style="margin-top: 340px;">DADOS DA CONTA: </div>
+
+
+    <div id="caixa-nome"><input id="nome" type="text" placeholder="  Nome"></div>
+    <div id="caixa-numero"><input id="numero" type="tel" placeholder="  Número para contato"></div>
+    <div id="caixa-nascimento"><input id="nascimento" type="text"placeholder="  Data de nascimento" onfocus="(this.type='date')" onblur="(this.type='date')"></div>
+    <select id="selecao" style="top: 245px;">
+        <option>Sexo:</option>
+        <option>Masculino</option>
+        <option>Feminino</option>
+        <option>Outro</option>
+        <option>Prefiro não informar</option>
+    </select>
+    <div id="caixa-email"><input id="e-mail" type="email" placeholder="  E-mail"></div>
+    <div id="caixa-senha"><input id="senha" type="password" placeholder="  Senha"></div>
+
+    <a href="paciente.html"><button class="hover-zoom">MUDAR</button></a>
 </body>
 </html>
