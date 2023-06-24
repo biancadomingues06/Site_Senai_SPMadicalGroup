@@ -27,9 +27,7 @@
             div.style.display = "block"; // Mostra a div quando estiver escondida
         }
     }
-    </script>
 
-<script>
     function exibirDiv() {
         var div = document.getElementById("minhaDiv");
         if (div.style.display === "block") {
@@ -38,7 +36,17 @@
             div.style.display = "block"; // Mostra a div quando estiver escondida
         }
     }
+
+    function exibirDiv2() {
+        var div = document.getElementById("minhaDiv2");
+        if (div.style.display === "block") {
+            div.style.display = "none"; // Esconde a div quando já estiver visível
+        } else {
+            div.style.display = "block"; // Mostra a div quando estiver escondida
+        }
+    }
     </script>
+
 </head>
 
 
@@ -95,6 +103,29 @@
         </div>
     </div>
 
+    <div id="consulta2">
+        <div id="texto2">
+            <li >Oftalmologista: Dr. Jonas</li>
+            <li >Data: 12/08/2023</li>
+            <li >Consulta: Anual (Rotina)</li>
+        </div>
+    </div>
+
+    <div id="botao-mais2" onclick="exibirDiv2()" class="hover-zoom"><img src="Imagens/mais-icon.png" alt=""  style="width: 60px;"></div>
+    <div id="minhaDiv2" class="minha-div2">
+            <br>
+        <div id="letraG"> CONSULTA MARCADA (SINTOMAS)</div>
+            <br>
+            <div id="letraG">SINTOMAS:</div>
+            <div id="letraG">DIAGNÓSTICO:</div>
+            <div id="letraG">TRATAMENTO:</div>
+            <br>
+            <div id="letraG">OBSERVAÇÕES:</div>
+
+            <div id="botao-menos2" onclick="exibirDiv2()" class="hover-zoom"><img src="Imagens/menos_icon.png" alt=""  style="width: 70px;"></div>
+    </div>
+
+
     <div id="botao-mais" onclick="exibirDiv()" class="hover-zoom"><img src="Imagens/mais-icon.png" alt=""  style="width: 60px;"></div>
     <div id="minhaDiv" class="minha-div">
             <br>
@@ -107,29 +138,6 @@
             <div id="letraG">OBSERVAÇÕES: O paciente disse ter dores de cabeça constante, além da visão que começara a embaçar. Causado pelo uso constante de aparelhos eletrônicos.</div>
 
             <div id="botao-menos" onclick="exibirDiv()" class="hover-zoom"><img src="Imagens/menos_icon.png" alt=""  style="width: 70px;"></div>
-    </div>
-    
-
-    <div id="consulta2">
-        <div id="texto2">
-            <li >Oftalmologista: Dr. Jonas</li>
-            <li >Data: 12/08/2023</li>
-            <li >Consulta: Anual (Rotina)</li>
-        </div>
-    </div>
-
-    <div id="botao-mais2" onclick="exibirDiv()" class="hover-zoom"><img src="Imagens/mais-icon.png" alt=""  style="width: 60px;"></div>
-    <div id="minhaDiv" class="minha-div2">
-            <br>
-        <div id="letraG"> CONSULTA MARCADA (SINTOMAS)</div>
-            <br>
-            <div id="letraG">SINTOMAS:</div>
-            <div id="letraG">DIAGNÓSTICO:</div>
-            <div id="letraG">TRATAMENTO:</div>
-            <br>
-            <div id="letraG">OBSERVAÇÕES:</div>
-
-            <div id="botao-menos2" onclick="exibirDiv()" class="hover-zoom"><img src="Imagens/menos_icon.png" alt=""  style="width: 70px;"></div>
     </div>
 </body>
     

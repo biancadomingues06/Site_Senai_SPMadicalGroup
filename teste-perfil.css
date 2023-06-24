@@ -1,0 +1,33 @@
+
+
+.campo-texto {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    position: absolute;
+}
+
+.campo-texto input {
+    border: none;
+    background-color: transparent;
+    display: none;
+}
+
+.campo-texto .texto {
+    display: inline-block;
+}
+
+.campo-texto .editar {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.campo-texto .salvar {
+    cursor: pointer;
+    color: green;
+    text-decoration: underline;
+    display: none;
+}

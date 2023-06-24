@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP Medical Group - Perfil </title>
+    <link rel="stylesheet" href="teste-perfil.css">
+    <link rel="shortcut icon" href="Imagens/icon logo.png" type="image/x-icon">
+
+
+    <script src="perfil-paciente.js"></script>
+    <style>
+        .campo-texto {
+            display: inline-block;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f1f1f1;
+            position: absolute;
+        }
+
+        .campo-texto input {
+            border: none;
+            background-color: transparent;
+            display: none;
+        }
+
+        .campo-texto .texto {
+            display: inline-block;
+        }
+
+        .campo-texto .editar {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .campo-texto .salvar {
+            cursor: pointer;
+            color: green;
+            text-decoration: underline;
+            display: none;
+        }
+    </style>
+
+<style>
+    button{
+    padding: 10px 8px;
+    height: 60px;
+    width: 240px;
+    margin-top: 570px;
+    margin-left: 860px;
+    background-color: #a124dc;
+    color: #ffff;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 50px;
+    border-color:#efefef;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    position: absolute;
+    }
+
+    button:hover{
+        background-color: #5e1082;
+    }
+
+    .hover-zoom {
+        transition: transform 0.3s;
+    }
+
+    .hover-zoom:hover {
+        transform: scale(1.05);
+    }
+</style>
+</head>
+
+
+<body style="overflow-y: hidden; overflow-x: hidden; background-color: #efefef;" onload="carregarInformacoes()">
+    <div id="campoTexto" class="campo-texto">
+        <input type="text">
+        <span class="texto">Texto fixo</span>
+        <span class="editar" onclick="habilitarEdicao()">Editar</span>
+        <span class="salvar" onclick="salvarEdicao()">Salvar</span>
+    </div>
+
+    <img src="Imagens/logo.png" alt="Logo" style="width: 140px; margin-top: 560px; margin-left: 1320px; position: absolute;">
+    <a href="paciente.html"><img src="Imagens/voltar-icon.png" alt="Voltar" style="width: 70px; margin-top: 590px; margin-left: 480px; position: absolute;" class="hover-zoom"></a>
+
+    <div id="letraG" style="margin-top: 50px;">DADOS PESSOAIS: </div>
+    <div id="letraG" style="margin-top: 340px;">DADOS DA CONTA: </div>
+
+
+    <div id="caixa-nome"><input id="nome" type="text" placeholder="  Nome"></div>
+    <div id="caixa-numero"><input id="numero" type="tel" placeholder="  Número para contato"></div>
+    <div id="caixa-nascimento"><input id="nascimento" type="text"placeholder="  Data de nascimento" onfocus="(this.type='date')" onblur="(this.type='date')"></div>
+    <select id="selecao" style="top: 245px;">
+        <option>Sexo:</option>
+        <option>Masculino</option>
+        <option>Feminino</option>
+        <option>Outro</option>
+        <option>Prefiro não informar</option>
+    </select>
+    <div id="caixa-email"><input id="e-mail" type="email" placeholder="  E-mail"></div>
+    <div id="caixa-senha"><input id="senha" type="password" placeholder="  Senha"></div>
+
+    <a href="paciente.html"><button class="hover-zoom">MUDAR</button></a>
+</body>
+</html>
