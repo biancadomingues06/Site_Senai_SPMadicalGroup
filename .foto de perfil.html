@@ -1,178 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Botão para Adicionar Foto de Perfil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel de Imagens com Botões de Navegação</title>
     <style>
-        #botaoAdicionarFoto {
-            width: 200px;
+        .carrossel {
+            width: 300px;
             height: 200px;
-            border-radius: 50%;
-            border: 2px dashed #ccc;
-            background-color: #f1f1f1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            transition: transform 0.3s;
             overflow: hidden;
+            position: relative;
         }
 
-        #botaoAdicionarFoto:hover {
-            transform: scale(1.05);
+        .carrossel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
 
-        #inputFoto {
-            display: none;
+        .carrossel .botao {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            outline: none;
+            cursor: pointer;
         }
 
-        #fotoPerfil {
-            max-width: 100%;
-            max-height: 100%;
-            display: none;
+        .carrossel .botao-anterior {
+            left: 10px;
+        }
+
+        .carrossel .botao-proximo {
+            right: 10px;
         }
     </style>
-
-
-
-
-<!--
-<style>
-    .div-botao {
-      display: none;
-    }
-
-    .div-botao.mostrar {
-      display: block;
-    }
-
-    .botao {
-      margin: 5px;
-      padding: 10px;
-      background-color: #ccc;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
--->
-
-<!--
-<style>
-    .minha-div {
-      position: absolute;
-      top: 0;
-      left: -200px;
-      width: 200px;
-      height: 200px;
-      background-color: #f1f1f1;
-      transition: left 1s;
-      z-index: 1;
-    }
-    
-    .aparecer {
-      left: 0;
-    }
-
-    .botao-div {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      z-index: 2;
-    }
-  </style>
-
-
-
-
-<body>
-
-    <button onclick="exibirDiv()" class="botao-div">Mostrar Div</button>
-
-    <div id="minhaDiv" class="minha-div">
-      <p>Conteúdo da Div</p>
-    </div>
-  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-      function exibirDiv() {
-        var div = document.getElementById("minhaDiv");
-        div.classList.toggle("aparecer");
-      }
-    </script>
+        $(document).ready(function() {
+            var carrossel = $(".carrossel");
+            var imagens = carrossel.find("img");
+            var indiceAtual = 0;
 
-
-
-    <h1>Adicionar Foto de Perfil</h1>
-
-    <label for="inputFoto" id="botaoAdicionarFoto">
-        <input type="file" id="inputFoto" accept="image/*">
-        <img id="fotoPerfil" src="#" alt="Foto de Perfil">
-    </label>
-  
-    <script>
-        document.getElementById('inputFoto').addEventListener('change', function(e) {
-            var img = document.getElementById('fotoPerfil');
-          
-            var file = e.target.files[0];
-            var reader = new FileReader();
-
-            reader.onload = function(e) {
-                img.src = e.target.result;
-                img.style.display = 'block';
+            function mostrarImagem(indice) {
+                imagens.removeClass("ativo");
+                $(imagens[indice]).addClass("ativo");
+                indiceAtual = indice;
             }
 
-            reader.readAsDataURL(file);
+            $(".botao-anterior").click(function() {
+                if (indiceAtual > 0) {
+                    mostrarImagem(indiceAtual - 1);
+                }
+            });
+
+            $(".botao-proximo").click(function() {
+                if (indiceAtual < imagens.length - 1) {
+                    mostrarImagem(indiceAtual + 1);
+                }
+            });
         });
     </script>
-
-
-
-
-
-
-<button class="botao" onclick="exibirDiv()">Mostrar Div</button>
-
-<div id="minhaDiv" class="div-botao">
-  <button class="botao">Botão 1</button>
-  <button class="botao">Botão 2</button>
-  <button class="botao">Botão 3</button>
+</head>
+<body>
+  <div id="carrossel" class="carrossel">
+    <img src="Imagens/cadastro médico.jpg" alt="Imagem 1">
+    <img src="Imagens/cadastro organizador.png" alt="Imagem 2">
+    <img src="Imagens/Cadastro paciente.jpg" alt="Imagem 3">
 </div>
-
-<script>
-  function exibirDiv() {
-    var div = document.getElementById("minhaDiv");
-    div.classList.toggle("mostrar");
-  }
-</script>
-
-
-
-
-
-<button class="botao" onclick="exibirDiv()">Mostrar Div</button>
-
-<div id="minhaDiv" class="minha-div">
-  <p>Conteúdo da Div</p>
-</div>
-
-<script>
-  function exibirDiv() {
-    var div = document.getElementById("minhaDiv");
-    div.classList.add("aparecer");
-  }
-</script>
--->
-
-<button onclick="confirmarSaida()">Sair do Perfil</button>
-
-<script>
-function confirmarSaida() {
-    var confirmar = confirm("Tem certeza que deseja sair do perfil?");
-
-    if (confirmar) {
-        // Aqui você pode adicionar a lógica para sair do perfil
-        alert("Perfil saiu com sucesso!");
-    }
-}
-</script>
-
+    <button class="botao botao-anterior">Anterior</button>
+    <button class="botao botao-proximo">Próximo</button>
 </body>
 </html>
